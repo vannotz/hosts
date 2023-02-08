@@ -1,9 +1,9 @@
 ## Commands I use while making this 
 # Remove comments
-sed "/^\s*#/d;s/\s*#[^\"']*$//" foo 
+sed "/^\s*#/d;s/\s*#[^\"']*$//" foo > bar
 
 # Remove blank lines
-sed -i '/^[[:blank:]]*$/ d' foo
+sed -i '/^[[:blank:]]*$/ d' foo > bar 
 
 # Remove duplicates 
 cat -n foo | sort -uk2 | sort -nk1 | cut -f2- > bar
