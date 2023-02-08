@@ -1,1 +1,0 @@
-cat -n foo | sort -uk2 | sort -nk1 | cut -f2- > bar
