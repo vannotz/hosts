@@ -1,7 +1,5 @@
 ## Commands I use while making this 
 # Remove comments
-sed "/^\s*#/d;s/\s*#[^\"']*$//" foo > bar
-
 # Remove blank lines
 sed -i '/^[[:blank:]]*$/ d' foo > bar 
 
