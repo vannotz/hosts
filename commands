@@ -1,7 +1,7 @@
-## Commands I use while making this 
+## Commands to shorten file size
 # Remove comments
+sed '/^[[:blank:]]*#/d;s/#.*//' foo > bar
 # Remove blank lines
-sed -i '/^[[:blank:]]*$/ d' foo > bar 
-
+awk 'NF' foo > bar
 # Remove duplicates 
 cat -n foo | sort -uk2 | sort -nk1 | cut -f2- > bar
