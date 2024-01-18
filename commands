@@ -3,5 +3,5 @@
 sed '/^[[:blank:]]*#/d;s/#.*//' foo > bar
 # Remove blank lines
 awk 'NF' foo > bar
-# Remove duplicates 
+# Remove duplicates
 cat -n foo | sort -uk2 | sort -nk1 | cut -f2- > bar
